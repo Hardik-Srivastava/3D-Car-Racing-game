@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100, 100 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -6.34955
+margin_bottom = -6.34961
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Up" type="Button" parent="."]
+margin_left = 101.0
+margin_top = 406.0
+margin_right = 301.0
+margin_bottom = 594.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Up"]
+shape = SubResource( 1 )
+action = "accelerate"
+
+[node name="Down" type="Button" parent="."]
+margin_left = 107.35
+margin_top = 764.753
+margin_right = 307.35
+margin_bottom = 952.753
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Down"]
+shape = SubResource( 1 )
+action = "brake"
+
+[node name="Left" type="Button" parent="."]
+margin_left = 1405.84
+margin_top = 742.529
+margin_right = 1605.84
+margin_bottom = 930.529
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Left"]
+shape = SubResource( 1 )
+action = "steer_left"
+
+[node name="Right" type="Button" parent="."]
+margin_left = 1774.12
+margin_top = 745.704
+margin_right = 1974.12
+margin_bottom = 933.704
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Right"]
+shape = SubResource( 1 )
+action = "steer_right"
